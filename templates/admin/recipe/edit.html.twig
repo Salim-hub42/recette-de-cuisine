@@ -1,0 +1,16 @@
+{% extends 'admin/admin.html.twig' %}
+{% block title "Recettes : " ~ recipe.title %}
+
+
+
+
+
+
+{% block body %}
+
+<h1>Recette : {{ recipe.title }}</h1>
+
+{{ form(form) }}
+
+
+{% endblock %}

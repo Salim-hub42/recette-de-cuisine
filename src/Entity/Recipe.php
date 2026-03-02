@@ -45,11 +45,7 @@ class Recipe
     #[Assert\LessThanOrEqual(value: 1440, message: 'La durée doit être inférieure ou égale à 1440 minutes (24 heures).')]
     private ?int $duration = null;
 
-    public function __construct()
-    {
-        $this->createdAt = new \DateTimeImmutable();
-        $this->updatedAt = new \DateTimeImmutable();
-    }
+
 
     public function getId(): ?int
     {
